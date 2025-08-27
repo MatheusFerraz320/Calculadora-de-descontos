@@ -1,0 +1,69 @@
+body {
+    background-color: rgba(239, 239, 239, 0.992);
+}
+.calc-container {
+    color : rgb(182, 223, 93);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    
+    border: 3px solid white;      /* Borda branca de 2px */
+    padding: 100px;                /* Espaço interno */
+    border-radius: 40px;          /* Cantos arredondados */
+    background-color: #312e2e;       /* Fundo escuro opcional */
+    width: 300px;                 /* Largura fixa */
+    margin: 0 auto;               /* Centraliza na página */
+
+
+}
+.button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+#button:active {
+    transform: scale(0.98);
+}
+.dinamico {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2ecc71;
+    background-color: #f0fff4;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+@media (max-width: 480px) {
+  .calc-container {
+    width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  .dinamico {
+    font-size: 1.2em;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+ h1 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif
+ }
+ 
