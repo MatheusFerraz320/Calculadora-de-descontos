@@ -12,13 +12,14 @@
 <script src="app.js"></script>
 <div class= calc-container>
 <label for="preco" ><strong>Preço</strong></label>
-<input type="number" id="preco" placeholder="digite um valor" >
-<label for="desconto"><strong>Desconto</strong></label>
-<input type="number"  placeholder= "digite um valor" id = "desconto">
+<input type="number" id="preco" placeholder="Valor" >
+<label for="desconto"><strong>Quantos % de desconto</strong></label>
+<input type="number"  placeholder= "Desconto" id = "desconto">
 <button id="button" class="button" onclick="mostrarDesconto()">calcule</button>
  <p id = "mensagem-de-erro"></p><strong></strong></p>
  <p><strong>💰Valor final: </strong> <span id="resultado" class="dinamico">R$ 0,00</span></p>
-</div>
+ <p id = "economia"></p>
+<button id ="temachange" class="trocartemabtn" onclick="temachange()">Tema escuro</button> 
     </main>
 <footer>Criado por Matheus Ferraz</footer>  
 </body>

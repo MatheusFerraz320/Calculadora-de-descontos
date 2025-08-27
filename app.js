@@ -13,9 +13,21 @@ function mostrarDesconto() {
 
   let precoFinal = calcdescontos(preco, desconto);
   document.getElementById("resultado").textContent = "R$ " + precoFinal.toFixed(2);
+  valoreconomizado(preco, precoFinal);
 }
 
 
+
+function valoreconomizado(preco , precoFinal) {
+  let economia = (preco - precoFinal)
+  document.getElementById ("economia").textContent = "você economizou R$" + economia.toFixed(2)
+  return;
   
+}
+
+function temachange() {
+  document.body.classList.toggle("dark-theme");
+
+} 
 
  
