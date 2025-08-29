@@ -3,18 +3,18 @@ html body {
   margin: 0;
 }
 body {
-  background-color: #ffffff;
-  color: #000000;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
   flex-direction: column;
+  color: #000000;
 }
-
+body:not(.dark-theme) {
+  background: linear-gradient(to right, #f0f4ffb5, #e8f0fe);
+}
 body.dark-theme {
   background-color: #1e1e1e;
-  color: linear-gradient(to right, #000000cd, #dbe2eb);
+  color: #f0f0f0;
 }
-
 main {
   flex: 1;
 }
